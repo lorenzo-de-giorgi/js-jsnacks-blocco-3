@@ -4,7 +4,7 @@
     Ogni volta che ne crei uno, stampalo.
 */
 
-let numberArray = parseInt(prompt('Inserisci quanti cicli vuoi creare:'));
+let numberArray = parseInt(prompt('Inserisci quante array vuoi creare:'));
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -12,10 +12,12 @@ function getRndInteger(min, max) {
 
 function randomArray(){
     let array = [];
-    for(let i = 0; i < 10; i++){
-        let randomNumber = getRndInteger(1, 100);
-        array.push(randomNumber);
-    }
+    for (let i = 0; i < 10; i++) {
+        array.push(getRndInteger(1, 100));
+    };
     return array;
 }
-console.log(randomArray(numberArray));
+
+for(let i = 0; i < numberArray; i++){
+    console.log(randomArray())
+}
