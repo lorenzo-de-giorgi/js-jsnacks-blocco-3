@@ -8,7 +8,8 @@ while(somma < 50){
     const num = parseInt(prompt('Inserisci un nuovo numero'));
     if(!isNaN(num)){
         sum += num;
+        numbers.push(num)
     }
     //console.log(sum);
 }
-console.log(sum);
+console.log(numbers, sum);
